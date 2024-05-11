@@ -1,0 +1,123 @@
+
+
+
+.datatable {
+    padding-right: 5px;
+    padding-left: 5px;
+
+    .MuiDataGrid-footerContainer {
+        color: gray;
+    }
+
+    .css-rtrcn9-MuiTablePagination-root:last-child {
+        color: gray;
+    }
+
+    .css-n3fyjk-MuiDataGrid-root .MuiDataGrid-container--top [role=row],
+    .css-n3fyjk-MuiDataGrid-root .MuiDataGrid-container--bottom [role=row] {
+        background-color: rgba(0, 128, 0, 0.548);
+    }
+   
+    
+    .add-new {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        
+        p {
+            color: gray;
+            font-size: px;
+        }
+
+        button {
+            border: none;
+            padding: 7px 30px;
+            border: 1px solid green;
+            color: green;
+            background: rgba(0, 128, 0, 0.171);
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+    }
+
+    .cellWidthimg{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .cell-img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: red;
+            border: 1px solid rgba(0, 0, 255, 0.658) ;
+        } 
+    };
+
+    .cellwidth {
+
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        border-radius: 5px;
+
+        &.pending {
+            color: red;
+            background-color: rgba(255, 0, 0, 0.212);            
+        }
+
+        &.active {
+            color: green;
+            background-color: rgba(0, 128, 0, 0.377);
+        }
+    };
+
+    .cellaction {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+
+        .viewbutton {
+            color: green;
+            border: 1px solid green;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .deletebutton {
+            
+            border: 1px solid rgba(255, 0, 0, 0.548);
+            color:  rgba(255, 0, 0, 0.801);
+            height: 25px;
+            display: flex;
+            align-items: center;
+            padding: 5px;   
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+    }
+
+    
+}
+
+
+.dark {
+
+    .cellWidthimg {
+            color: gray;
+        }
+}

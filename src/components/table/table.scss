@@ -1,0 +1,73 @@
+
+
+.tableCell {
+      
+    .cell-customer-image {
+        display: flex;
+        gap: 10px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: gray;
+        border: 1px solid rgba(0, 0, 255, 0.671);
+        object-fit: cover;
+    }
+
+    .status {
+
+        padding: 5px;
+        border-radius: 5px;
+
+        &.approved {
+            color: green;
+            background-color: rgba(0, 128, 0, 0.349);
+        }
+        &.Pending {
+           color: rgb(224, 148, 7);
+           background-color: rgba(255, 217, 0, 0.336);
+        }
+    }
+}
+
+
+.dark {
+
+    .main-table {
+     background-color: #5555557a;
+     overflow-y: auto;
+    }
+
+    .tableCell {
+        background-color: #070F2B;
+        border: 1px solid #5555557a;
+        color: #ffffff63;
+
+        span {
+            
+            .status {
+                background-color: #070F2B;
+            }
+        }
+
+    }
+
+    .table-body {
+
+        width: 700px;
+        overflow-y: auto;
+
+        .table-id {
+            background-color: #070F2B;
+            border: 1px solid #55555563;
+            color: #ffffff63;
+        }
+    }
+}
+
+
+.main-table {
+    overflow-y: auto;
+}
