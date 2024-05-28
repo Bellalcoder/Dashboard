@@ -1,4 +1,11 @@
 
+.main-table {
+
+    overflow-x:auto;
+    max-height: 200px;
+    max-width:99%;
+    
+}
 
 .tableCell {
       
@@ -30,15 +37,10 @@
            background-color: rgba(255, 217, 0, 0.336);
         }
     }
-}
+};
 
 
 .dark {
-
-    .main-table {
-     background-color: #5555557a;
-     overflow-y: auto;
-    }
 
     .tableCell {
         background-color: #070F2B;
@@ -52,22 +54,17 @@
             }
         }
 
-    }
+    };
 
     .table-body {
-
-        width: 700px;
-        overflow-y: auto;
-
+        
+        
         .table-id {
             background-color: #070F2B;
-            border: 1px solid #55555563;
+            border: 1px solid #5555557a;
             color: #ffffff63;
         }
-    }
-}
+    };
+};
 
 
-.main-table {
-    overflow-y: auto;
-}

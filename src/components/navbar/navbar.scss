@@ -18,6 +18,10 @@
         .search {
             font-size: 13px;
         }
+
+        .item {
+            display: none;
+        }
     }
 
     .input-aria input {
@@ -72,5 +76,50 @@
             }
         }
 
+    };
+
+    .responsive {
+
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        padding: 20px 5px;
+        border-radius: 5px;
+        z-index: 200;
+        box-shadow: 2px 2px 2px #5555552f, -2px -2px 2px #55555527;
+
+        .pofile {
+            width: 30px;
+            height: 30px;
+        }
+
+        .item {
+            margin-top: 15px;
+        }
+    };
+
+    .menu-item {
+        display: none;
     }
+
+    @media (max-width:768px) {
+        .items {
+            display: none;
+        }
+
+        .menu-item {
+            display: block;
+            margin-right: 20px;
+        }
+
+    }
+
+
 }

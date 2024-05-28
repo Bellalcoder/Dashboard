@@ -9,6 +9,7 @@ import Table from "../../components/table/table.jsx";
 
 import "../../style/dark.scss";
 import "./home.scss";
+import "../../components/responsive.scss"
 const home = () => {
   return (
    <>

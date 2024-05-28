@@ -13,16 +13,14 @@ import { TfiMenuAlt } from "react-icons/tfi";
 import "./navbar.scss";
 const navbar = () => {
   return (
-    <>
+    <div>
       <div className="navbar-container hello">
         <div className="navbar">
            <div className="input-aria">
               <input type="text" placeholder="Seacrch"/>
               <FaSearch className="search"/>
            </div>
-
-           <div className="items">
-
+          <div className="items">
              <div className="item">
                <BsGlobe/>
                <p>English</p>
@@ -47,16 +45,58 @@ const navbar = () => {
              </div>
 
              <div className="item">
-               <TfiMenuAlt />
+               <TfiMenuAlt className="menu" />
              </div>
 
              <div className="pofile">
                 <img src="/public/image/IMG_20230828_171127-removebg-preview.png" alt="ss" />
              </div>
-           </div>
+
+            {/*========= mobile-responisve-menu ============== */}
+            <div className="responsive">
+              <div className="pofile">
+                <img src="/public/image/IMG_20230828_171127-removebg-preview.png" alt="ss" />
+             </div>
+             
+              <div className="item">
+               <BsGlobe/>
+               
+             </div>
+
+             <div className="item">
+                <BsFullscreenExit />
+             </div>
+
+             <div className="item">
+               <MdOutlineDarkMode/>
+             </div>
+
+             <div className="item">
+                <FaRegBell />
+                <div className="ntfa">1</div>
+             </div>
+
+             <div className="item">
+               <MdMessage />
+               <div className="ntfa">2</div>
+             </div>
+
+             <div className="item">
+               <TfiMenuAlt/>
+             </div>
+
+            </div>
+
+          </div>
+
+          <div className="menu-item">
+            <TfiMenuAlt className="menu" />
+          </div>
+
         </div>
       </div>
-    </>
+    </div>
+  
   )
 }
 
